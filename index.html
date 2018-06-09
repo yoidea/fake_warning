@@ -48,7 +48,7 @@
         history.pushState(null, null, null);
         $(window).on("popstate", function(e){
           if (!e.originalEvent.state){
-            $("#voice").get(0).play();
+            play_se();
             history.pushState(null, null, null);
             return;
           }
